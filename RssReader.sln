@@ -7,7 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RssReader.Android", "RssRea
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RssReader.UWP", "RssReader\RssReader.UWP\RssReader.UWP.csproj", "{E5C2842C-ABBE-4C8B-AC66-13830DDD57A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RssReader", "RssReader\RssReader\RssReader.csproj", "{A0A704E8-26B5-4FFD-A4F3-BC869153488E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RssReader", "RssReader\RssReader\RssReader.csproj", "{A0A704E8-26B5-4FFD-A4F3-BC869153488E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{C37B3696-544B-43AD-9751-3F67A35D4895}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,22 @@ Global
 		{A0A704E8-26B5-4FFD-A4F3-BC869153488E}.Release|x64.Build.0 = Release|Any CPU
 		{A0A704E8-26B5-4FFD-A4F3-BC869153488E}.Release|x86.ActiveCfg = Release|Any CPU
 		{A0A704E8-26B5-4FFD-A4F3-BC869153488E}.Release|x86.Build.0 = Release|Any CPU
+		{C37B3696-544B-43AD-9751-3F67A35D4895}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C37B3696-544B-43AD-9751-3F67A35D4895}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C37B3696-544B-43AD-9751-3F67A35D4895}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{C37B3696-544B-43AD-9751-3F67A35D4895}.Debug|ARM.Build.0 = Debug|Any CPU
+		{C37B3696-544B-43AD-9751-3F67A35D4895}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C37B3696-544B-43AD-9751-3F67A35D4895}.Debug|x64.Build.0 = Debug|Any CPU
+		{C37B3696-544B-43AD-9751-3F67A35D4895}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C37B3696-544B-43AD-9751-3F67A35D4895}.Debug|x86.Build.0 = Debug|Any CPU
+		{C37B3696-544B-43AD-9751-3F67A35D4895}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C37B3696-544B-43AD-9751-3F67A35D4895}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C37B3696-544B-43AD-9751-3F67A35D4895}.Release|ARM.ActiveCfg = Release|Any CPU
+		{C37B3696-544B-43AD-9751-3F67A35D4895}.Release|ARM.Build.0 = Release|Any CPU
+		{C37B3696-544B-43AD-9751-3F67A35D4895}.Release|x64.ActiveCfg = Release|Any CPU
+		{C37B3696-544B-43AD-9751-3F67A35D4895}.Release|x64.Build.0 = Release|Any CPU
+		{C37B3696-544B-43AD-9751-3F67A35D4895}.Release|x86.ActiveCfg = Release|Any CPU
+		{C37B3696-544B-43AD-9751-3F67A35D4895}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
