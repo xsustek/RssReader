@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DAL;
+using Realms;
 using Xamarin.Forms;
 
 namespace RssReader
@@ -12,6 +14,9 @@ namespace RssReader
 		public MainPage()
 		{
 			InitializeComponent();
+
+		    RssResource.Create();
+		    lbl.Text = RssResource.Count().ToString();
 		}
 	}
 }

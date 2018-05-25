@@ -3,9 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:RssReader"
              x:Class="RssReader.MainPage">
-
-	<Label Text="Welcome to Xamarin.Forms!" 
+<StackLayout>
+    <Label Text="Welcome to Xamarin.Forms!" 
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
-
+    <Label x:Name="lbl" />
+    </StackLayout>
+	
 </ContentPage>
