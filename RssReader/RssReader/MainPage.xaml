@@ -4,8 +4,7 @@
              xmlns:local="clr-namespace:RssReader"
              x:Class="RssReader.MainPage">
 
-	<Label Text="Welcome to Xamarin.Forms!" 
+    <Label Text="Welcome to Xamarin.Forms!" 
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
-
 </ContentPage>
