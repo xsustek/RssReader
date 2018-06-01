@@ -1,11 +1,9 @@
-﻿using System;
-using Realms;
-
-namespace DAL
+﻿namespace BL.DTOs
 {
-    public class RssResource : RealmObject
+    public class ResourceDTO
     {
         public string Name { get; set; }
         public string Url { get; set; }
+        public bool Display { get; set; }
     }
 }
