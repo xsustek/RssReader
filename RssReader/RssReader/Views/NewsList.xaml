@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:RssReader.Controls"
+             x:Class="RssReader.Views.NewsList"
+             Title="Feed">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Filter" Clicked="FilterMenuItem_OnClicked" />
+        <ToolbarItem Text="Add" Clicked="AddMenuItem_OnClicked" />
+    </ContentPage.ToolbarItems>
+    <StackLayout>
+        <ListView x:Name="MyListView"
+                  IsEnabled="{Binding IsEnabled}"
+                  ItemsSource="{Binding News}"
+                  ItemTapped="Handle_ItemTapped"
+                  IsPullToRefreshEnabled="True"
+                  RefreshCommand="{Binding Refresh}"
+                  IsRefreshing="{Binding IsRefreshing}"
+                  HasUnevenRows="True"
+                  SeparatorColor="LightSlateGray">
+
+            <!--Built in Cells-->
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <controls:NewsViewCell News="{Binding .}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>

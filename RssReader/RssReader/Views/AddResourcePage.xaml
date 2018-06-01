@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RssReader.Views.AddResourcePage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition  Height="2*"/>
+            </Grid.RowDefinitions>
+            <Label Text="Add new RSS resource" Grid.Row="0" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Large" />
+            <Entry Keyboard="Text" Text="{Binding Resource.Name, Mode=TwoWay}" Placeholder="Name" Grid.Row="1" />
+            <Entry Keyboard="Url" Text="{Binding Resource.Url, Mode=TwoWay}" Placeholder="Rss Url" Grid.Row="2" />
+            <Button Text="Add" Clicked="Button_OnClicked" Grid.Row="3" />
+            <Button Text="Cancel" Grid.Row="4" Clicked="CalcelButton_OnClicked" />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

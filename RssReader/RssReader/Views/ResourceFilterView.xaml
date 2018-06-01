@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RssReader.Views.ResourceFilterView">
+    <StackLayout>
+        <ListView x:Name="MyListView"
+                  ItemsSource="{Binding Resources}"
+                  HorizontalOptions="FillAndExpand"
+                  VerticalOptions="FillAndExpand"
+                  SeparatorColor="LightSlateGray">
+
+            <!--Built in Cells-->
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Margin="10">
+                            <Label Text="{Binding Name, Mode=OneWay}" HorizontalOptions="FillAndExpand" />
+                            <Switch IsToggled="{Binding Display, Mode=TwoWay}"  />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button Text="OK" Command="{Binding Dismiss}" />
+    </StackLayout>
+
+</ContentPage>
