@@ -2,7 +2,6 @@
 using System.Threading.Tasks;
 using BL;
 using BL.DTOs;
-using DAL;
 using Xamarin.Forms;
 
 namespace RssReader.ViewModels

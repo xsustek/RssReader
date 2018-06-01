@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
 using Plugin.Connectivity;
 using RssReader.ViewModels;
 using Xamarin.Forms;
@@ -16,7 +11,7 @@ namespace RssReader.Views
     {
         public Tabs()
         {
-            InitializeComponent();          
+            InitializeComponent();
 
             CrossConnectivity.Current.ConnectivityChanged += Current_ConnectivityChanged;
         }
@@ -31,19 +26,10 @@ namespace RssReader.Views
             }
             else
             {
-                if (!Children.Any())
-                {
-                    Children.Add(new NewsList
-                    {
-                        ViewModel = new NewsViewModel(false)
-                    });
-                    Children.Add(new VisitedNewsView
-                    {
-                        ViewModel = new NewsViewModel(true)
-                    });
-                }
+                InitTabs();
             }
         }
+
 
         protected override async void OnAppearing()
         {
@@ -55,17 +41,26 @@ namespace RssReader.Views
             }
             else
             {
-                if (!Children.Any())
+                InitTabs();
+            }
+        }
+
+        private void InitTabs()
+        {
+            if (!Children.Any())
+            {
+                Children.Add(new NewsList
                 {
-                    Children.Add(new NewsList
-                    {
-                        ViewModel = new NewsViewModel(false)
-                    });
-                    Children.Add(new VisitedNewsView
-                    {
-                        ViewModel = new NewsViewModel(true)
-                    });
-                }
+                    Title = "Feed",
+                    Icon = "news.png",
+                    ViewModel = new NewsViewModel(false)
+                });
+                Children.Add(new NewsList
+                {
+                    Title = "Visited",
+                    Icon = "eye.png",
+                    ViewModel = new NewsViewModel(true)
+                });
             }
         }
     }

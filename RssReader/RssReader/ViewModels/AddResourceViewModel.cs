@@ -1,9 +1,6 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using BL;
 using BL.DTOs;
-using DAL;
-using Realms;
 using Xamarin.Forms;
 
 namespace RssReader.ViewModels
@@ -13,8 +10,6 @@ namespace RssReader.ViewModels
         private readonly ResourceService resourceService;
         private readonly NewsService newsService;
         private ResourceDTO resource = new ResourceDTO();
-
-        private readonly Func<string, string, string, Task> Alert;
 
         public ResourceDTO Resource
         {
@@ -26,7 +21,6 @@ namespace RssReader.ViewModels
             }
         }
 
-        private Command add;
         public AddResourceViewModel()
         {
             this.resourceService = new ResourceService();

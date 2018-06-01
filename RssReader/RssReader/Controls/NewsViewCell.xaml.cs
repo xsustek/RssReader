@@ -1,9 +1,6 @@
-﻿using System;
-using System.Net;
-using BL;
+﻿using BL;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using WebView = RssReader.Views.WebView;
 
 namespace RssReader.Controls
 {

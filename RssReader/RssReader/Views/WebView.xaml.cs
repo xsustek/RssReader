@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace RssReader.Views
@@ -24,14 +18,20 @@ namespace RssReader.Views
 		    Title = title;
 		}
 
+	    protected override async void OnAppearing()
+	    {
+	        base.OnAppearing();
+	        await ProgressBar.ProgressTo(0.9, 900, Easing.SpringIn);
+        }
+
 	    private void WebView_OnNavigating(object sender, WebNavigatingEventArgs e)
 	    {
-	        ActivityIndicator.IsVisible = true;
-	    }
+	        ProgressBar.IsVisible = true;
+        }
 
 	    private void WebView_OnNavigated(object sender, WebNavigatedEventArgs e)
 	    {
-	        ActivityIndicator.IsVisible = false;
+	        ProgressBar.IsVisible = false;
         }
 	}
 }

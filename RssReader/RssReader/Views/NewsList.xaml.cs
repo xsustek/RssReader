@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Linq;
 using System.Net;
-using System.Threading.Tasks;
 using BL;
-using DAL;
-using Realms;
 using RssReader.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;

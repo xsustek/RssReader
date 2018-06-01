@@ -1,9 +1,6 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
-using BL;
 using DAL;
-using Realms;
-using RssReader.ViewModels;
 using RssReader.Views;
 using Xamarin.Forms;
 

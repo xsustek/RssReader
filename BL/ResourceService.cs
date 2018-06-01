@@ -4,12 +4,10 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 using AutoMapper;
-using AutoMapper.QueryableExtensions;
 using BL.Automapper;
 using BL.DTOs;
 using DAL;
 using MoreLinq;
-using Realms;
 
 namespace BL
 {

@@ -4,21 +4,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RssReader.Views.WebView">
     <ContentPage.Content>
-        <AbsoluteLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-            <StackLayout AbsoluteLayout.LayoutBounds="0,0,1,1"
-                         AbsoluteLayout.LayoutFlags="All">
+        <StackLayout>
+            <ProgressBar x:Name="ProgressBar" />
                 <WebView Source="{Binding .}" Navigating="WebView_OnNavigating" Navigated="WebView_OnNavigated"
                          VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
             </StackLayout>
-            <AbsoluteLayout x:Name="ActivityIndicator"
-                            AbsoluteLayout.LayoutBounds="0.5,0.5,1,1"
-                            AbsoluteLayout.LayoutFlags="All">
-                <ActivityIndicator Color="Black"
-                                   AbsoluteLayout.LayoutBounds="0.5,0.5,0.1,0.1"
-                                   AbsoluteLayout.LayoutFlags="All"
-                                   IsVisible="True"
-                                   IsRunning="True" />
-            </AbsoluteLayout>
-        </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

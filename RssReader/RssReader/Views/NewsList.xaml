@@ -6,8 +6,8 @@
              x:Class="RssReader.Views.NewsList"
              Title="Feed">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Filter" Clicked="FilterMenuItem_OnClicked" />
-        <ToolbarItem Text="Add" Clicked="AddMenuItem_OnClicked" />
+        <ToolbarItem Text="Filter" Icon="filter.png" Clicked="FilterMenuItem_OnClicked" />
+        <ToolbarItem Text="Add" Icon="add.png" Clicked="AddMenuItem_OnClicked" />
     </ContentPage.ToolbarItems>
     <StackLayout>
         <ListView x:Name="MyListView"

@@ -4,7 +4,7 @@
           xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
           x:Class="RssReader.Controls.NewsViewCell">
     <ViewCell.View>
-        <Grid RowSpacing="0" ColumnSpacing="0" Margin="10">
+        <Grid RowSpacing="0" ColumnSpacing="0" Margin="10" Padding="10">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*"/>
